@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ava Poland | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <img src="images/Untitled design (9).png" alt="Ava Poland logo" class="header-img">
+  </header>
+  
+  <!-- ===== Projects Section ===== -->
+   <section id="intro">
+<div class="intro paragraph"> I am a sophomore studying in mechanical engineering at Kansas State University and minoring in Physics. I am currently a teaching assistant for the class ME 212, Engineering Graphics, a class that teaches 3D modeling and drafting skills for engineering. I am passionate about robotics, automation, and mechaical design, so my time at school has been spent becoming proficient in solidworks and challenging myself with various projects. My goal as an engineer is to use my creativity to my full ability in order to positively impact the lives of others. I am constantly aiming to expand my knowledge and experiences in hopes of achieving this.</div>
+
+
+  <section id="projects">
+    <h2>Engineering Projects</h2>
+    <ul>
+      <li>
+        <h3>Custom Video Game Controller <span class="date">| Sept – Nov 2024</span></h3>
+        <div class="image-gallery">
+          <img src="images/controller1.jpg" alt="Game controller 1" class="gallery-img active">
+          <img src="images/controller2.png" alt="Game controller 2" class="gallery-img">
+          <img src="images/controller3.png" alt="Game controller 3" class="gallery-img">
+          <img src="images/controller4.png" alt="Game controller 4" class="gallery-img">
+          <div class="click-label">Click to view more</div>
+        </div>
+        
+
+        <p>For this DEN 161 design project, I collaborated with a teammate to research, design, and manufacture a fully functional video game controller. We programmed an Arduino to control simple browser-based games and 3D printed an ergonomic casing. We presented our final results in a detailed 10-page lab report showing how we adhered to safety codes and prioritized qualities that were valuable to our customer base.</p>
+      </li>
+
+      <li>
+        <h3>FIRST Technology Challenge Robot <span class="date">| 2022 – 2024</span></h3>
+        <div class="image-gallery">
+          <img src="images/ftc1.png" alt="FTC robot 1" class="gallery-img active">
+          <img src="images/ftc2.png" alt="FTC robot 2" class="gallery-img">
+          <img src="images/ftc3.png" alt="FTC robot 3" class="gallery-img">
+          <div class="click-label">Click to view more</div>
+        </div>
+        
+
+        <p>I worked with my teammates to create the robot above, which lead us to place 1st in our league championship, and earned us the Inspire, Design, and Innovate awards. Some notable features of this robot include an aimable paper airplane launcher, climbing hooks that allow the robot to suspend itself in the air, and a crablike claw that can grab and place game elements up to 4 feet above the ground. </p>
+      </li>
+
+      <li>
+        <h3>RC Mustang Car <span class="date">| 2023 – 2024</span></h3>
+        <div class="image-gallery">
+          <img src="images/mustang1.jpg" alt="RC Mustang 1" class="gallery-img active">
+          <img src="images/mustang2.png" alt="RC Mustang 2" class="gallery-img">
+          <img src="images/mustang3.jpg" alt="RC Mustang 3" class="gallery-img">
+          <img src="images/mustang5.jpg" alt="RC Mustang 5" class="gallery-img">
+          <img src="images/mustang6.jpg" alt="RC Mustang 6" class="gallery-img">
+          <img src="images/mustang7.jpg" alt="RC Mustang 7" class="gallery-img">
+          <div class="click-label">Click to view more</div>
+        </div>
+    
+
+        <p>This 2015 Mustang was a design project I worked on my sernior year of highschool. My goal was to create a remote controlled drift car from scratch. I altered a free model of a mustang into a shell that I 3D printed into 4 portions. I also created a spoiler for some personal flare. I then used a CNC machine to cut out the aluminium chassis and other housing for the electronics. In the end, I wasn't able to fully assemble the car because the project went over my budget, but I'm still proud of the parts I did accomplish and hope to one day return to this car and complete it. </p>
+      </li>
+
+      <li>
+        <h3>KitchenAid Mixer Disassembly <span class="date">| Feb 2025 – Apr 2025</span></h3>
+        <div class="image-gallery">
+          <img src="images/mixerfullassembly.png" alt="KitchenAid CAD" class="gallery-img active">
+          <img src="images/mixerexplode.png" alt="KitchenAid Exploded View" class="gallery-img active">
+          <div class="click-label">Click to view more</div>
+        </div>
+        <p>The kitchen aid seen above was a final project for the class ME212, Engineering Graphics. For this project, I was tasked with modeling over 50 components of a Kitchen Aid Mixer, and properly assembling them in Solidworks. After modeling, I created a full detail drawing of each component and subassembly which I then presented in a design report.  </p>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- ===== Footer ===== -->
+ <footer>
+  <div class="contactrow">
+    <a href="mailto:acpoland@ksu.edu">acpoland@ksu.edu</a>
+
+    <a href="tel:+18166428607">+1 (816) 642-8607</a>
+
+    <a href="https://www.linkedin.com/in/ava-poland-1843b8353" target="_blank">
+      <img src="images/linkedin-icon.png" alt="LinkedIn" class="icon">
+    </a>
+
+    <a href="https://app.joinhandshake.com/profiles/y5ssr5" target="_blank">
+      <img src="images/handshake-icon.png" alt="Handshake" class="icon">
+    </a>
+  </div>
+
+  <p>© 2026 Ava Poland</p>
+</footer>
+
+
+  <!-- ===== JavaScript for Image Galleries ===== -->
+  <script>
+    document.querySelectorAll('.image-gallery').forEach(gallery => {
+      const images = gallery.querySelectorAll('.gallery-img');
+      let current = 0;
+
+      gallery.addEventListener('click', () => {
+        images[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        images[current].classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
