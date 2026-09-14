@@ -1,19 +1,11 @@
-# Ava Poland Engineering Portfolio — v2
+# Ava Poland — Engineering Portfolio
 
-GitHub Pages-ready static portfolio.
+Static HTML/CSS/JS portfolio designed for GitHub Pages.
 
-IMPORTANT:
-- Upload the ENTIRE contents of this folder to the root of the GitHub Pages repository.
-- Keep `assets/` and `projects/` folders intact.
-- `index.html` must be at the repository root.
-- The image paths are intentionally relative so the site works at a GitHub Pages project URL such as `/Ava-Poland-Portfolio/`.
-- Resume: `Ava_Poland_Resume.pdf`
+## Deploy
+1. Upload the contents of this folder to the repository used for the portfolio.
+2. Keep `index.html` at the repository root.
+3. In GitHub: Settings → Pages → deploy from the `main` branch / root.
+4. The project pages live in `projects/`.
 
-This version updates:
-- Homepage identity/header
-- Current status/focus/based-at metadata
-- Personal growth/learning statement
-- About section
-- Pink accent color
-- Correct current ME 212 TA status
-- Project image paths and folder structure
+No build step or framework is required.
