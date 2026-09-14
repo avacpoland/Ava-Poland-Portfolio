@@ -5,8 +5,8 @@
   --text:#eeeae5;
   --muted:#9b9b9b;
   --line:#303236;
-  --accent:#d47a9e;
-  --accent-soft:#b96888;
+  --accent:#D47A9E;
+  --accent-soft:#b04d74;
   --max:1180px;
 }
 *{box-sizing:border-box}
@@ -42,7 +42,11 @@ nav{
 }
 .meta{background:var(--panel);padding:20px}
 .meta-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
-.meta-value{font-size:.92rem}
+.meta-value{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.92rem;
+  letter-spacing:0;
+}
 section{padding:76px 0;border-bottom:1px solid var(--line)}
 .section-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:30px}
 .section-head h2{margin:0;font-size:1.7rem;letter-spacing:-.02em}
