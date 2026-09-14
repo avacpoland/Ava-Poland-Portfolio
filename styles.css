@@ -40,7 +40,7 @@ img{max-width:100%;display:block}
 .nav-links{display:flex;gap:28px;font-size:13px;color:#c5c7c4}
 .nav-links a:hover{color:var(--accent)}
 .menu{display:none}
-.hero{padding:clamp(90px,13vw,170px) 0 110px}
+.hero{padding:clamp(90px,13vw,120px) 0 110px}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:80px;align-items:end}
 .eyebrow{font-size:11px;color:var(--accent);text-transform:uppercase}
 .hero h1{
