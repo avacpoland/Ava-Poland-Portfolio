@@ -149,3 +149,20 @@ footer{padding:35px 0 55px;color:var(--muted);font-size:11px}
   .log-entry{grid-template-columns:1fr;gap:5px}
   .footer-row{flex-direction:column}
 }
+
+/* Rebuilt portfolio additions */
+.experience-item + .experience-item { margin-top: 72px; }
+.exp-body h3 { margin: 34px 0 10px; font-size: 20px; color: var(--text); }
+.exp-body h4 { margin: 26px 0 8px; font-size: 17px; color: var(--text); }
+.exp-body p { margin: 0 0 16px; }
+.exp-body ol { margin: 10px 0 18px 22px; padding: 0; }
+.exp-body li { margin: 8px 0; }
+.log-content ol { margin: 14px 0 10px 22px; padding: 0; }
+.log-content li { margin: 8px 0; }
+.log-media { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; margin-top: 22px; }
+.log-media img { width: 100%; height: auto; display: block; border: 1px solid var(--line); }
+.log-content p:last-child { margin-bottom: 0; }
+@media (max-width: 800px) {
+  .experience-item + .experience-item { margin-top: 48px; }
+  .log-media { grid-template-columns: 1fr; }
+}

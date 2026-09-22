@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pi Car Pro | Project Log — Ava Poland</title>
-<meta name="description" content="Ava Poland — Mechanical Engineering portfolio. Design, CAD, robotics, fabrication, and engineering project documentation.">
+<meta name="description" content="Ava Poland — Mechanical Engineering portfolio. Pi Car Pro custom gripper project log.">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -23,21 +23,72 @@
 <section class="project-hero"><div class="container">
   <div class="project-kicker"><span class="eyebrow">01 / Project Log</span><span class="meta">Aug 2026 — Present</span></div>
   <h1>Pi Car Pro<br>Custom Gripper</h1>
-  <div class="project-intro"><p>An ongoing personal engineering project to redesign the manipulator on a Pi Car Pro mobile robotics platform. The goal is to move beyond the stock arm and develop a more capable, sturdy, and manufacturable gripper.</p><div class="hero-side"><div class="line"><div class="meta">STATUS</div><div class="value">IN PROGRESS</div></div><div class="line"><div class="meta">FOCUS</div><div class="value">Mechanical Design / Robotics</div></div></div></div>
+  <div class="project-intro">
+    <p>An ongoing personal engineering project to redesign the manipulator on a Pi Car Pro mobile robotics platform. The goal is to move beyond the stock arm and develop a more capable, sturdy, and manufacturable gripper.</p>
+    <div class="hero-side">
+      <div class="line"><div class="meta">STATUS</div><div class="value">IN PROGRESS</div></div>
+      <div class="line"><div class="meta">FOCUS</div><div class="value">Mechanical Design / Robotics</div></div>
+    </div>
+  </div>
   <div class="hero-photo reveal"><img data-lightbox src="../assets/IMG_2748.jpeg" alt="Pi Car Pro with stock robotic arm"></div>
 </div></section>
 
-<section class="case-section"><div class="container case-grid"><div class="case-label">01 / Starting Point</div><div class="case-content"><h2>Understand the stock platform before redesigning it.</h2><p>I started by assembling the platform and arm without powering the servos. Before creating custom geometry, I wanted to understand the mounting interfaces, available space, and existing range of motion.</p><div class="media-grid"><img class="tall" data-lightbox src="../assets/IMG_2735.jpeg" alt="Stock gripper arm being inspected"><img class="tall" data-lightbox src="../assets/IMG_2750.jpeg" alt="Arm mounted to Pi Car chassis"></div></div></div></section>
+<section class="case-section"><div class="container case-grid">
+  <div class="case-label">01 / Project Log</div>
+  <div class="case-content">
+    <h2>Documenting the project as it develops.</h2>
+    <p>The project log is intentionally structured like an engineering notebook. Each entry records what I worked on, what I observed, and what those observations mean for the next design iteration.</p>
 
-<section class="case-section"><div class="container case-grid"><div class="case-label">02 / First Observations</div><div class="case-content"><h2>The stock mechanism already has useful capability—but also useful problems.</h2><p>During assembly I identified a shoulder mounting issue where a screw head interferes with the servo and forces the aluminum bracket to bend. I also recorded the stock motion as a baseline before changing the design.</p><div class="callouts"><div class="callout"><div class="number">360°</div><div class="caption">Base rotation observed</div></div><div class="callout"><div class="number">~45°</div><div class="caption">Elbow range observed</div></div><div class="callout"><div class="number">~45°</div><div class="caption">Wrist range observed</div></div></div><div class="media-grid"><img class="wide" data-lightbox src="../assets/IMG_2751.jpeg" alt="Close view of Pi Car chassis and arm"><img class="wide" data-lightbox src="../assets/IMG_2750.jpeg" alt="Front view of arm mounted on chassis"></div></div></div></section>
+    <div class="log">
 
-<section class="case-section"><div class="container case-grid"><div class="case-label">03 / Requirements</div><div class="case-content"><h2>Measure first. Set concrete goals second.</h2><p>The next design phase is based on measurements of the stock arm and chassis rather than guessing at dimensions. The current goals are to improve the gripper, add two additional fingers, and make the mechanism sturdy while remaining practical to manufacture and assemble.</p><div class="next-box"><div class="meta">NEXT DESIGN TASKS</div><ul><li>Measure stock arm reach, motion, and mounting interfaces.</li><li>Establish target grip geometry and range of motion.</li><li>Calculate required joint torque.</li><li>Design a custom mounting interface to the Pi Car.</li><li>Develop CAD iterations before committing to fabrication.</li></ul></div></div></div></section>
+      <article class="log-entry">
+        <div class="log-date">08.22.26</div>
+        <div class="log-content">
+          <h3>Initial brainstorming</h3>
+          <p>Today was the day I began brainstorming my ideas for the arm. The Pi Car Pro kit already comes with parts and assembly instructions for a grabber, but it only has two fingers. My goal is to improve the claw to have at least 4 fingers, and to have more stability and precision to pick up small objects such as toy balls.</p>
+          <p>I created a task list for this project to help me stay on track as time goes on. I did this because the kit did not come with a Raspberry Pi so I’m currently waiting on it to be shipped. In the meantime I want to maintain productivity because there is still a substantial amount of things to do while I wait.</p>
+          <ol>
+            <li>Assemble kit without electronic components: Since there will be a good amount of reverse engineering required to make my claw, I need to construct the stock version to familiarize myself with the parts and components I’ll be using. It will improve my prototyping to be aware of dimensions and mounting technology beforehand.</li>
+            <li>Obtain 3D Model of Pi Car Pro: I will likely use preexisting parts in my design, and I will want to construct new parts based off of the size and geometry of these parts. Modeling and machining these will require a 3D model of the existing pieces.</li>
+            <li>Begin improved grabber CAD: I will create different potential versions of the new grabber.</li>
+            <li>Begin writing Python for the servos: Even without the microcontroller I can begin writing code that will later be used for the robot.</li>
+          </ol>
+        </div>
+      </article>
 
-<section class="case-section"><div class="container case-grid"><div class="case-label">04 / Project Log</div><div class="case-content"><h2>Documenting the project as it happens.</h2><p>The log is intentionally closer to an engineering notebook than a polished retrospective. Failed ideas, awkward assembly problems, and small observations are useful data for the next revision.</p><div class="log">
-<div class="log-entry"><div class="log-date">08.22.26</div><div><h3>Initial brainstorming</h3><p>Started with the stock arm as a reference and began researching ways to improve the gripper, potentially adding two more fingers. Created a priority list covering CAD, torque calculations, mounting, electrical architecture, controls, and documentation.</p></div></div>
-<div class="log-entry"><div class="log-date">09.12.26</div><div><h3>Platform assembly</h3><p>Assembled the robot and arm without electronics to understand how the mechanism fits together before beginning the custom CAD work.</p></div></div>
-<div class="log-entry"><div class="log-date">09.13.26</div><div><h3>Stock mechanism inspection</h3><p>Finished a loose assembly and identified interference at the shoulder servo mount. Recorded the baseline range of motion and chassis condition before redesign.</p></div></div>
-</div><div class="next-box"><div class="meta">NEXT ENTRY</div><p style="margin:8px 0 0;color:#b4b8b4">Measurements, design requirements, and first concept sketches.</p></div></div></div></section>
+      <article class="log-entry">
+        <div class="log-date">09.12.26</div>
+        <div class="log-content">
+          <h3>Platform assembly</h3>
+          <p>Today I spent a few hours putting the robot and the arm together. Funny enough the most difficult part of assembling it was peeling off the protective film from each acrylic piece. Now that the robot is assembled I can analyze how the arm mounts onto the chassis and integrate that into my design.</p>
+          <p>I have noticed a few things about the chassis assembly that may be an issue in the future. The arm sits at the front of the chassis and is heavy enough that it slightly bends. Additionally, the instruction manual has the builder install a screw between a servo and the aluminum mount that holds it in such a way that the screw head forces the aluminum to bend. I believe this was an intentional design choice required to accommodate for the width of the base of the arm. I am going to take important notes of these things and aim to fix them in my final design.</p>
+          <div class="log-media">
+            <img class="wide" data-lightbox src="../assets/IMG_2735.jpeg" alt="Pi Car Pro chassis and stock arm during assembly">
+            <img class="wide" data-lightbox src="../assets/IMG_2750.jpeg" alt="Side view of Pi Car Pro chassis and mounted arm">
+          </div>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-date">09.16.26</div>
+        <div class="log-content">
+          <h3>Reverse engineering Pi Car parts</h3>
+          <p>Unfortunately, I could not find a public official STEP file for the Pi Car Pro or any of its elements. I looked for unofficial, community-made files as well but I had no luck. I have started making the acrylic pieces first, measuring the cutouts with a ruler and modeling them in SolidWorks. Once I have each of these components made, I can make any new parts based off of those when I am customizing the gripper.</p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-date">09.22.26</div>
+        <div class="log-content">
+          <h3>Reverse engineering Pi Car parts, continued</h3>
+          <p>I continued reverse engineering the existing Pi Car Pro components so that I can build the custom gripper around the actual mounting geometry of the platform. This gives me a usable CAD reference for developing new parts instead of designing from assumed dimensions.</p>
+          <p>Future CAD screenshots and additional documentation can be added directly to this entry as the design develops.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</div></section>
 </main>
 
 <footer><div class="container footer-row">
@@ -46,4 +97,5 @@
 </div></footer>
 <div class="lightbox"><span class="close">×</span><img src="" alt=""></div>
 <script src="../script.js"></script>
-</body></html>
+</body>
+</html>
