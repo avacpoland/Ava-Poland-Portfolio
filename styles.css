@@ -152,7 +152,7 @@ footer{padding:35px 0 55px;color:var(--muted);font-size:11px}
 
 /* Rebuilt portfolio additions */
 .experience-item + .experience-item { margin-top: 72px; }
-.exp-body h3 { margin: 34px 0 10px; font-size: 20px; color: var(--text); }
+.exp-role { font-size: 24px; line-height: 1.25; letter-spacing: .04em; }
 .exp-body h4 { margin: 26px 0 8px; font-size: 17px; color: var(--text); }
 .exp-body p { margin: 0 0 16px; }
 .exp-body ol { margin: 10px 0 18px 22px; padding: 0; }
